@@ -7,10 +7,30 @@
 <!- This is a replacement block for Body in base.html -->
 {% block body %}
     <!- Try building a new body here, bootstrap is a wise choice ->
-    <div class="px-5 py-5 mx-auto">
-        <h1 class="text-primary"><strong>Stubby Body</strong></h1>
-        <p class="text-secondary">Put your name here</p>
+    <div>
+        <div class = "content">
+        <script src="https://cdn.htmlgames.com/embed.js?game=CookieMonster&amp;bgcolor=white"></script>
+        </div>
     </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.halo.min.js"></script>
+        <script>
+            VANTA.HALO({
+                el: "body",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 950.00,
+                minWidth: 950.00,
+                baseColor: 0x381370,
+                backgroundColor: 0x0,
+                amplitudeFactor: 0.40,
+                xOffset: 0.15,
+                yOffset: -0.11,
+                size: 1.10
+        })
+        
+            </script>
 {% endblock %}
 
 <!- This is turning off birds background from base.html -->
