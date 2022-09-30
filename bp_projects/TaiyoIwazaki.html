@@ -3,17 +3,16 @@
 
 <!-- Setting up variables to customize "project" details to be specific to hawkers -->
 {% set project = "Hawkers" %}
-{% set overview = "https://hawkers.nighthawkcodingsociety.com/aboutus" %}
-{% set scrumboard = "https://github.com/noyah81/p2ducks/projects/1" %}
-{% set repo = "https://github.com/noyah81/p2ducks" %}
-{% set authors = "https://nighthawkcodingsociety.com/projectsearch/details/Hawkers%20Tweet" %}
+{% set overview = "https://taiyoi.github.io/Compsci22/" %}
+{% set repo = "https://github.com/TaiyoI/Compsci22" %}
+{% set authors = "https://github.com/TaiyoI" %}
 
-<!-- Setting up a block replacement to customize background to BIRDS -->
+<!-- Setting up a block replacement to customize background to RINGS -->
 {% block background %}
     <script src="{{ url_for('static', filename='js/three.r119.min.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/vanta.net.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/vanta.rings.min.js') }}"></script>
     <script>
-        VANTA.NET({
+        VANTA.RINGS({
             el: "body",
             mouseControls: true,
             touchControls: true,
