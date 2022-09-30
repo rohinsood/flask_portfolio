@@ -7,12 +7,52 @@
 <!- This is a replacement block for Body in base.html -->
 {% block body %}
     <!- Try building a new body here, bootstrap is a wise choice ->
-    <div class="px-5 py-5 mx-auto">
-        <h1 class="text-primary"><strong>Stubby Body</strong></h1>
-        <p class="text-secondary">Put your name here</p>
+    <div class="px-5 py-5 mx-auto" style="height: 100vh;">
+        <h1 class="text-primary" style="color: white"><strong>ROHIN SOOD</strong></h1>
+        <form id="todo-form">
+            <input type="text" placeholder="task name" id="todo-name">
+            <input type="submit" value="submit">
+          </form>
+          
+          <ul id="todo-list"></ul>
+
     </div>
+
+    <script>
+          
+        document.getElementById("todo-form").onsubmit = function (event) {
+          event.preventDefault();
+      
+          const name = document.getElementById("todo-name").value;
+      
+          document.getElementById("todo-name").value = "";
+      
+          const todoItem = document.createElement("li");
+          const todoText = document.createTextNode(name);
+      
+          todoItem.appendChild(todoText);
+          todoItem.classList.add("todo-item");
+      
+          todoItem.onclick = function () {
+            document.getElementById("todo-list").removeChild(todoItem);
+          }
+      
+          document.getElementById("todo-list").appendChild(todoItem);
+        }
+      
+      </script>
+      
+      <style>
+
+        .todo-item:hover {
+          text-decoration: line-through;
+        }
+
+        li {
+            color: white;
+        }
+      
+      </style>
+
 {% endblock %}
 
-<!- This is turning off birds background from base.html -->
-{% block background %}
-{% endblock %}
