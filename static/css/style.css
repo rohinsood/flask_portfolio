@@ -1,0 +1,22 @@
+*{
+    margin: 0; 
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+.content{
+    display: absolute;
+    flex-direction: column;
+    justify-content: left;
+}   
+.content h1 {
+    font-size: 40px;
+    margin: 50px;
+    text-align: center;
+    margin-top: 80px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
