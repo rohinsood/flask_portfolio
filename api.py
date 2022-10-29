@@ -31,6 +31,6 @@ def decode(code):
     save_dict["upgrade_five"] = upgrade_5
 
     if len.ore < 10:
-        userCode = str(ore).zfill(10)
+        code = str(ore).zfill(10)
 
     return jsonify(save_dict)
