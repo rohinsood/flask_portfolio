@@ -6,9 +6,28 @@
 <!- This is a replacement block for Body in base.html -->
 {% block body %}
     <!- Try building a new body here, bootstrap is a wise choice ->
-    <body>
-      <iframe src="https://rohinsood.github.io/first-impressions/index.html" width="100%" height="875px"></iframe>
-      </div>
-</body>
+    <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/chess.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link href="../src/index.css" rel="stylesheet">
+    <meta
+      name="description"
+      content="An interactive guide to chess openings"
+    />
+    <title>Chess Openings</title>
+  </head>
+
+  <body class="Background">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <!-- This calls the React DOM Component from App.js -->
+    <div id="root"></div>
+    
+  </body>
+</html>
 {% endblock %}
 
