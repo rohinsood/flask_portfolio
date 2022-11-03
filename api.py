@@ -29,10 +29,10 @@ if response.status_code != 204:
 teams_dict = {}
 
 logos = [
-    'https://cdn.discordapp.com/attachments/902298316094717963/1036481642979663973/hawks.png',
-    'https://cdn.discordapp.com/attachments/902298316094717963/1036481671505137684/celtic.png',
-    'https://cdn.discordapp.com/attachments/902298316094717963/1036481746075656302/nets.png',
-    'https://cdn.discordapp.com/attachments/902298316094717963/1036481787343409272/hornets.png',
+    'https://user-images.githubusercontent.com/109186517/199640420-fa3c7b28-7ab6-4ef7-b7ed-b7644d7028fb.png',
+    'https://user-images.githubusercontent.com/109186517/199640459-51054515-df20-4820-ba25-f9eb4965128b.png',
+    'https://user-images.githubusercontent.com/109186517/199640492-d49e1e46-3ac7-41cc-95ed-e4c49b51d04e.png',
+    'https://user-images.githubusercontent.com/109186517/199640537-a3421be9-8ca7-46e5-b24f-41d43b169060.png',
     'https://media.discordapp.net/attachments/902298316094717963/1036481822856577035/bulls.png',
     'https://cdn.discordapp.com/attachments/902298316094717963/1036481856662667344/cavaliers.png',
     'https://cdn.discordapp.com/attachments/902298316094717963/1036481903387217940/mavs.png',
